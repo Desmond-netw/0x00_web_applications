@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My page</title>
+<!--    my internal sytling start here ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: relative;
+            width: 100vw;
+            height: 300px;
+            
+        }
+        /*-- =========== top_nav start here ==== -- */
+        .container .top_nav {
+            width: 100%;
+            min-height: 65px;
+            text-align: center;
+            padding: 5px 20px;
+            border-bottom: 2px solid #555;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background: #efd0d0;
+        }
+        .top_nav ul {
+            display: relative;
+            list-style: none;
+        }
+        .top_nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            margin-left: 10px;
+            width: 37px;
+            text-align: center;
+            transition: 0.4s ease-out;
+        }
+        .top_nav ul li a{
+            width: 100%;
+            height: 100%;
+        }
+        .top_nav ul li:hover,
+        .top_nav ul li:active{
+            border: 2px solid #fff;
+            border-radius: 50%;
+            box-shadow: 3px 2px 5px rgba(0,0,0,,0.7);
+        }
+        
+        /*-- =========== Main_nav start here ==== -- */
+        .container .main_nav {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background: #efd0d0;
+        }
+        .main_nav .col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-transform: uppercase;
+            line-height: 20px;
+            
+        }
+        .main_nav .col-1,
+        .main_nav .col-3{
+            
+            min-width: 400px;
+            height: 100px;
+        }
+        .main_nav .col-1 {
+             border-right: 1px solid #555;
+        }
+        .main_nav .col-3{
+            border-left: 1px solid #555;
+        }
+        .main_nav .col-2{
+            min-width: 400px;
+            height: 160px;
+        }
+        .main_nav .col-2 h4 {
+            font-weight: 500;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .main_nav .col-2 p {
+            font-weight: 300;
+            margin-top: 10px;
+            text-transform: lowercase;
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="container">
+        <div class="header">
+            <div class="top_nav">
+                <ul>
+                    <li><a href="#"><img src="icons/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="icons/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="icons/goal.png" alt=""></a></li>
+                    <li><a href="#"><img src="icons/mail.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="main_nav">
+                <div class="col col-1">
+                   <h5>natural style <br> and soul</h5>
+                </div> 
+                <div class="col col-2">
+                    <h4>FANN <br>REYES</h4>
+                    <p>Wedding Photograph</p>
+                </div>
+                <div class="col col-3"> 
+                    <h5>Love is etternal <br> <span>photos the same</span></h5>
+                </div>
+
+            </div>
+        </div>
+  </div>
+   
+</body>
+</html>
